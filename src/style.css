@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap');
+
+@font-face {
+  font-family: 'IDroid';
+  src: url('IDroid.ttf.woff') format('woff'),
+    url('IDroid.ttf.svg#IDroid') format('svg'),
+    url('IDroid.ttf.eot'),
+    url('IDroid.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c5ebd6;
+}
+
+@media(max-width:500px) {
+  body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+}
+
+header {
+  font-size: 1.05rem;
+  background-image: linear-gradient(to bottom, #3ca464, #195f31, #0e3018);
+  color: white;
+  box-shadow: 1px 3px 10px #00000075;
+  text-align: center;
+  height: 100%;
+  padding: 10px 5px 10px 0px;
+  margin: auto;
+}
+
+@media (max-width:800px) {
+  header {
+    padding: 1px 1px;
+  }
+}
+
+header>h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+  text-shadow: 2px 2px 0px rgb(0 0 0 / 32%);
+}
+
+header>p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px auto 50px;
+  text-shadow: 2px 2px 0px rgb(0 0 0 / 32%);
+}
+
+ul>li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #80dba7;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 5px;
+}
+
+nav>ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+li>a:hover {
+  background-color: #3EA966;
+  color: #063d1e;
+  transition-duration: .3s;
+}
+
+section {
+  min-width: 300px;
+  max-width: 1000px;
+  padding: 0px 140px;
+  margin: 0px 35px;
+}
+
+@media(max-width: 800px) {
+  section {
+    padding: 0px 10px;
+  }
+}
+
+@media(max-width:400px) {
+  section.noticias {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+}
+
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  box-shadow: 1px 1px 10px #00000075;
+  padding: 1px 20px;
+}
+
+@media(max-width:400px) {
+  main {
+    padding: 1px 1px;
+  }
+}
+
+.noticias>h1 {
+  margin: 40px 5px 5px 5px;
+  font-family: 'IDroid';
+  color: #123D1E;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 10px;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .noticias>h1 {
+    text-align: center;
+  }
+}
+
+.noticias>p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-indent: 1.2rem;
+  text-align: justify;
+  padding: 5px;
+}
+
+span {
+  color: #2f6343;
+  font-weight: bold;
+}
+
+.noticias>h2 {
+  font-family: 'IDroid';
+  color: #217341;
+  background-image: linear-gradient(to right,
+      #86e3af,
+      #93e8b5,
+      #c3f3d6,
+      #def9e7);
+}
+
+.noticias>p>a {
+  background-color: #83E1AD;
+  color: #063d1e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.noticias>p>a::after {
+  content: '\00A0\1F517';
+}
+
+.noticias>p>a:hover {
+  color: #327A52;
+  text-decoration: underline;
+}
+
+picture>img {
+  width: 100%;
+}
+
+.imagem {
+  height: 280px;
+  width: 480px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .imagem {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+div.video {
+  background-color: #123D1F;
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 58%;
+  position: relative;
+}
+
+@media(max-width:400px) {
+  div.video {
+    margin: -3px -1px 30px -10px;
+  }
+}
+
+.video>iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.curiosidades>aside>h3 {
+  background-color: #1E5C37;
+  color: white;
+  border-radius: 2px 2px 0px 0px;
+  padding: 10px 10px 10px 20px;
+  margin: -5px -1px 15px -20px;
+  text-align: justify;
+}
+
+@media (max-width:600px) {
+  .curiosidades aside>h3 {
+    margin: -5px -1px 15px -1px; 
+  }
+}
+
+@media (max-width:420px) {
+  .curiosidades aside>h3 {
+    margin: -9px -2px 15px 0px;
+  }
+}
+
+.curiosidades aside {
+  padding: 0px 0px 10px 20px;
+  margin: -5px 0px 15px 0px;
+  background-color: #83E1AD;
+  box-shadow: 2px 3px 10px 0px #00000075;
+}
+
+@media (max-width:600px) {
+  .curiosidades aside {
+    padding: 0px;
+    margin: 0px 0px 13px 0px;
+  }
+}
+
+@media (max-width:420px) {
+  .curiosidades aside {
+    padding: 0px;
+    margin: -4px -33px 13px -1px;
+  }
+}
+
+@media(max-width:400px) {
+  section {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+  }
+}
+
+.curiosidades aside>p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-indent: 1.2rem;
+  text-align: justify;
+  padding: 0px 20px;
+  margin: 10px 0px;
+}
+
+@media (max-width:400px) {
+  .curiosidades aside>p {
+    padding: 0px 50px;
+    margin: 10px -5px;
+  }
+}
+
+.curiosidades aside>ul>li::before {
+  content: '\2714\00A0\00A0';
+}
+
+.curiosidades aside>ul>li {
+  display: inline-block;
+  list-style-type: disc;
+  width: 40%;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media(max-width:950px) {
+  .curiosidades aside>ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+.curiosidades aside>p>a::after {
+  content: '\00A0\1F517';
+}
+
+.curiosidades aside>p>a:hover {
+  color: #327A52;
+  text-decoration: underline;
+  background-color: #25b465;
+}
+
+.curiosidades aside>p>a {
+  background-color: #83E1AD;
+  color: #063d1e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.paragrafo-final>p {
+  background: white;
+  box-shadow: 4px 6px 10px #00000075;
+  line-height: 1.3rem;
+  text-indent: 1.6rem;
+  border-radius: 0px 0px 5px 5px;
+  padding: 12px 10px 12px 15px;
+  margin: -15px 0px 15px 0px;
+  text-align: justify;
+}
+
+@media (max-width:600px) {
+  .paragrafo-final>p {
+    padding: 12px 20px 12px 15px;
+    margin: -15px 0px 15px -1px;
+  }
+}
+
+@media (max-width:420px) {
+  .paragrafo-final>p {
+    padding: 12px 44px 12px 15px;
+    margin: -15px -34px 15px -1px;
+  }
+}
+
+footer {
+  background-color: #123D1F;
+  text-align: center;
+  height: 100%;
+  padding: 5px;
+  margin: 0px;
+}
+
+footer>p>a {
+  text-decoration: none;
+  color: #83E1AD;
+  font-weight: bold;
+  height: 100%;
+}
+
+footer>p {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 0.9rem;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+footer>p>a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
